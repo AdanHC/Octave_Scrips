@@ -1,0 +1,19 @@
+lim_a=3;
+lim_b=-3;
+num_inter=200;
+
+
+f = inline ("x^2");
+
+h= (lim_b-lim_a)/num_inter;
+
+x= lim_a:h:lim_b;
+int=0;
+
+for i=1:num_inter;
+  
+  xm=(x(i)+x(i+1))/2;
+  int=int+f(xm)*h;
+end 
+fprintf ("el area es: ")
+fprintf("%d", int);
