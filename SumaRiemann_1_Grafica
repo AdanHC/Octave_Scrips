@@ -1,0 +1,6 @@
+clc
+clear
+x3=0:00.1:2;
+y3=1/1+(x3.^2+3);
+plot(x3,y3,'r','linewidth',2);
+hold off
